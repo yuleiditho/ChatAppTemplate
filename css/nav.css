@@ -1,0 +1,91 @@
+
+header {
+    background-color: #fcf5ebff;  
+}
+
+#arrow {
+    position: relative;
+    top: 4px;
+    left: -25px;
+}
+
+.arrow-up::before {
+    content: "▲";
+}
+
+.arrow-down::before {
+    content: "▼";
+}
+
+#menuContent {
+    display: none;
+    position: absolute;
+    top: 70px; /* Ajusta según sea necesario */
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000; /* Asegura que el menú esté encima de todo */
+    background-color: #fff; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#menuContent .infoBox {
+    width: 260px;
+    height: 300px;
+    background-color:  #fff; 
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10%;
+    border: 1px solid #333;
+}
+
+#menuContent .infoBox:is(:hover, :active){
+    background-color:  rgb(38, 212, 102);
+}
+
+#menuContent .infoBox:hover i{
+    color:rgb(38, 212, 102);
+    background-color: #000;
+}
+
+#menuContent .infoBox i{
+    padding: 4.5px;
+    margin: 0 0 30px 0;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: rgb(38, 212, 102);
+    color: #fff;
+}
+
+#menuContent .infoBox h2 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#menuContent .infoBox p {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
+#menuContent .infoBox span {
+    font-size: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+#menuContent {
+    display: none;
+}
